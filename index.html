@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<title>Régulus Media</title>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet"/>
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
@@ -39,41 +40,45 @@
 	<section id="whatwedo" data-aos="fade-in">
 		<h2 data-aos="slide-down">¿Qué hacemos?</h2>
 		<p class="definition" data-aos="slide-down">Creamos soluciones de negocios para ti,<br>ya sea que tengas una gran empresa, un pequeño negocio o una idea para emprender.</p>
+		<div class="divflex">
 			<article id="triptico" data-aos="zoom-in-up">
-				<img src="img/whatwedo1.jpg" alt="Fábrica o gran empresa" class="imgsector1">
-				<img src="img/whatwedo2.jpg" alt="Pequeño negocio" class="imgsector1">
-				<img src="img/whatwedo3.jpg" alt="Emprendedor" class="imgsector1">
+				<img src="img/whatwedo1.jpg" alt="Fábrica o gran empresa" class="imgsector">
+				<p class="imgfoot1">Reorganizamos tu estructura y optimizamos tus esfuerzos para seguir creando valor y generando ganancias.</p>
 			</article>
 			<article id="triptico" data-aos="zoom-in-up">
-				<p class="imgfoot1">Reorganizamos tu estructura y optimizamos tus esfuerzos para seguir creando valor y generando ganancias.</p>
+				<img src="img/whatwedo2.jpg" alt="Pequeño negocio" class="imgsector">
 				<p class="imgfoot1">Estructuramos tus procesos y organizamos las actividades, mejorando la experiencia de cara al cliente final.</p>
+			</article>
+			<article id="triptico" data-aos="zoom-in-up">
+				<img src="img/whatwedo3.jpg" alt="Emprendedor" class="imgsector">
 				<p class="imgfoot1">Le damos forma a tu idea, haciendo de ella un producto o servicio rentable, que sea capaz de perdurar en el tiempo.</p>
 			</article>
+		</div>	
 		<p class="conclusion" data-aos="slide-down"><br>Sin duda, somos tu mejor opción.</p>
 	</section>
 
 	<section id="whoweare" data-aos="fade-in">
 		<h2 data-aos="slide-down"><br>¿Quiénes somos?</h2>
 		<p class="definition" data-aos="slide-down">Un equipo multidisciplinario, capacitado, con mucha experiencia y la mejor onda.<br></p>
-		<div id="team">
+		<div class="divflex">
 			<article id="quarter" data-aos="flip-left">
 				<p class="imgup">Toño Toussaint</p>
-				<img src="img/equipo1.jpg" alt="Antonio Toussaint" class="imgsector2">
+				<img src="img/equipo1.jpg" alt="Antonio Toussaint" class="imgsector">
 				<p class="imgfoot2"><b>El líder del equipo.</b><br>Economista con 20 años de experiencia en gestión de corporaciones y grandes empresas.</p>
 			</article>
 			<article id="quarter" data-aos="flip-left">
 				<p class="imgup">Johnny Varela</p>
-				<img src="img/equipo2.jpg" alt="Jonathan Varela" class="imgsector2">
+				<img src="img/equipo2.jpg" alt="Jonathan Varela" class="imgsector">
 				<p class="imgfoot2"><b>El orador experto.</b><br>Contador Público con formación en liderazgo de equipos y desarrollo corporativo.</p>
 			</article>
 			<article id="quarter" data-aos="flip-right">
 				<p class="imgup">Ana Michilena</p>
-				<img src="img/equipo3.jpg" alt="Anaís Michilena" class="imgsector2">
+				<img src="img/equipo3.jpg" alt="Anaís Michilena" class="imgsector">
 				<p class="imgfoot2"><b>La que todo lo sabe.</b><br>Abogada especialista en derecho administrativo, aduanas y comercio internacional.</p>
 			</article>
 			<article id="quarter" data-aos="flip-right">
 				<p class="imgup">Edu Longa</p>
-				<img src="img/equipo4.jpg" alt="Eduardo Longa" class="imgsector2">
+				<img src="img/equipo4.jpg" alt="Eduardo Longa" class="imgsector">
 				<p class="imgfoot2"><b>El de las buenas ideas.</b><br>Administrador de empresas con experiencia en emprendimiento y desarrollo de nuevos negocios.</p>	
 			</article>
 		</div>
@@ -83,16 +88,34 @@
 	<section id="clients" data-aos="flip-down">
 		<h2 data-aos="slide-down"><br>Nuestros clientes</h2>
 		<p class="definition" data-aos="slide-down">Estas son algunas de las marcas que respaldan nuestro trabajo:</p>
-			<article id="enterprises">
-				<img src="img/EmpLogo1.jpg" alt="Confex Decorating" class="imgsector3" data-aos="fade-up">
-				<img src="img/EmpLogo2.jpg" alt="Only for men Barbería" class="imgsector3" data-aos="fade-up">
-				<img src="img/EmpLogo3.jpg" alt="Cervecería Polar" class="imgsector3" data-aos="fade-up">
-				<img src="img/EmpLogo4.jpg" alt="Wendy's Venezuela" class="imgsector3" data-aos="fade-up">
-				<img src="img/EmpLogo5.png" alt="Smirnoff Ice" class="imgsector3" data-aos="fade-up">
-				<img src="img/EmpLogo6.png" alt="Instituto Loscher" class="imgsector3" data-aos="fade-up">
-				<img src="img/EmpLogo7.jpg" alt="Triskel Disco Club" class="imgsector3" data-aos="fade-up">
-				<img src="img/EmpLogo8.png" alt="La Patana Cultural" class="imgsector3" data-aos="fade-up">
+		
+		<div class="divflex">
+			<article id="quarter" data-aos="zoom-in-left">
+				<img src="img/EmpLogo1.jpg" alt="Confex Decorating" class="enterprise">
 			</article>
+			<article id="quarter" data-aos="zoom-in-right">			
+				<img src="img/EmpLogo2.jpg" alt="Only for men Barbería" class="enterprise">
+			</article>
+			<article id="quarter" data-aos="zoom-in-left">
+				<img src="img/EmpLogo3.jpg" alt="Cervecería Polar" class="enterprise">
+			</article>
+			<article id="quarter" data-aos="zoom-in-right">
+				<img src="img/EmpLogo4.jpg" alt="Wendy's Venezuela" class="enterprise">
+			</article>
+			<article id="quarter" data-aos="zoom-in-left">
+				<img src="img/EmpLogo5.png" alt="Smirnoff Ice" class="enterprise">
+			</article>
+			<article id="quarter" data-aos="zoom-in-right">
+				<img src="img/EmpLogo6.png" alt="Instituto Loscher" class="enterprise">
+			</article>
+			<article id="quarter" data-aos="zoom-in-left">
+				<img src="img/EmpLogo7.jpg" alt="Triskel Disco Club" class="enterprise">
+				</article>
+			<article id="quarter" data-aos="zoom-in-right">
+				<img src="img/EmpLogo8.png" alt="La Patana Cultural" class="enterprise">
+			</article>
+		</div>
+
 		<p class="conclusion" data-aos="slide-down"><br>¡Tu empresa también puede estar aquí!</p>
 	</section>
 
@@ -132,9 +155,11 @@
 			</article>
 		</div>
 	</section>
+
 	<footer>
 		<p class="copyright">© 2019 Regulus Media S.A. - Todos los derechos reservados.</p>
 	</footer>
+
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
 		<script type="text/javascript">
