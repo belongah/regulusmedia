@@ -94,35 +94,39 @@ h2{
 	margin-bottom: 1em;
 }
 
-.imgsector1{
-	position: relative;
-	width: 30%;
+#triptico{
+	width: 33%;
+	margin-top: 2em;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.imgsector{
+	width: 90%;
 	margin: 1.5% 1.5% 0.5% 1.5%;
 	border: 5px solid #F58121;
 	border-radius: 15px;
 	box-sizing: border-box;
+	align-items: center;
 	transition-duration: 0.5s;
 }
 
-.imgsector1:hover{
-	border: 10px solid white;
+.imgsector:hover{
+	border: 5px solid white;
 	border-radius: 0px;
 }
 
 .imgfoot1{
-	width: 30%;
-	padding: 1.5%;
-	font-weight: bold;
+	width: 90%;
+	margin: 2.5%;
+	padding-bottom: 1em;
 	color: #F58121;	
 	text-align: center;
+	box-sizing: border-box;
+	font-weight: bold;
 	text-shadow: 1px 1px 0 black;
-}
-
-#triptico{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	align-items: flex-start;
 }
 
 .conclusion{
@@ -134,9 +138,10 @@ h2{
 	padding-bottom: 2em;
 }
 
-#team{
+.divflex{
 	display: flex;
-	flex-direction: row;
+	flex-flow: row wrap;
+	justify-content: space-around;
 }
 
 #quarter{
@@ -155,21 +160,6 @@ h2{
 	font-weight: bolder;
 }
 
-.imgsector2{
-	width: 90%;
-	margin: 1.5% 1.5% 0.5% 1.5%;
-	border: 5px solid #F58121;
-	border-radius: 15px;
-	box-sizing: border-box;
-	align-items: center;
-	transition-duration: 0.5s;
-}
-
-.imgsector2:hover{
-	border: 5px solid white;
-	border-radius: 0px;
-}
-
 .imgfoot2{
 	width: 90%;
 	margin: 2.5%;
@@ -186,19 +176,16 @@ h2{
 	background-image: linear-gradient(to bottom, #0d0d0d, #e46c0a, #F58121, #e46c0a, #0d0d0d);
 }
 
-.imgsector3{
-	width: 20%;
-	margin: 2.5%;
+.enterprise{
+	width: 90%;
+	margin: 1.5% 1.5% 0.5% 1.5%;
 	border-radius: 15px;
 	box-sizing: border-box;
-	align-items: center;
+	transition-duration: 0.5s;
 }
 
-#enterprises{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-	align-items: flex-start;
+.enterprise:hover{
+	border-radius: 0px;
 }
 
 #contact{
@@ -304,3 +291,4 @@ input[type="submit"]:hover{
 	text-align: center;
 	box-sizing: border-box;
 	text-shadow: 1px 1px 0 grey;
+}
