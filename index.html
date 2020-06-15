@@ -5,12 +5,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<title>Régulus Media</title>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 	<link rel="shortcut icon" href="img/RIMicon.jpg" type="image/x-icon">
 	<link rel="stylesheet" href="css/estilos.css">
+	<script src="sliderengine/jquery.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
+    <script src="sliderengine/initslider-1.js"></script>
 </head>
-
 <body>
 	<nav class="navig">
 		<div class="regulus">
@@ -21,22 +24,35 @@
 			<li><a href="#">La empresa</a></li>
 			<li><a href="#whatwedo">Qué hacemos</a></li>
 			<li><a href="#whoweare">Quiénes somos</a></li>
-			<li><a href="#clients">Clientes</a></li>
+			<li><a href="#customers">Clientes</a></li>
 			<li><a href="#contact">Contacto</a></li>
 		</ul>
 		</div>
 	</nav>
-
-	<main>
-		<ul class="sliderMain">
-			<li><img src="img/sliding1.jpg" class="slid"/></li>
-			<li><img src="img/sliding2.jpg" class="slid"/></li>
-			<li><img src="img/sliding3.jpg" class="slid"/></li>
-			<li><img src="img/sliding4.jpg" class="slid"/></li>
-			<li><img src="img/sliding5.jpg" class="slid"/></li>
-		</ul>
-	</main>
-
+    <main class="amazingslider-wrapper" id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:1500px;margin:0px auto 48px;">
+        <div class="amazingslider" id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+            <ul class="amazingslider-slides" style="display:none;">
+                <li><img src="images/sliding1.jpg" alt="sliding1"  title="sliding1" />
+                </li>
+                <li><img src="images/sliding2.jpg" alt="sliding2"  title="sliding2" />
+                </li>
+                <li><img src="images/sliding3.jpg" alt="sliding3"  title="sliding3" />
+                </li>
+                <li><img src="images/sliding4.jpg" alt="sliding4"  title="sliding4" />
+                </li>
+                <li><img src="images/sliding5.jpg" alt="sliding5"  title="sliding5" />
+                </li>
+            </ul>
+            <ul class="amazingslider-thumbnails" style="display:none;">
+                <li><img src="images/sliding1-tn.jpg" alt="sliding1"/></li>
+                <li><img src="images/sliding2-tn.jpg" alt="sliding2"/></li>
+                <li><img src="images/sliding3-tn.jpg" alt="sliding3"/></li>
+                <li><img src="images/sliding4-tn.jpg" alt="sliding4"/></li>
+                <li><img src="images/sliding5-tn.jpg" alt="sliding5"/></li>
+            </ul>
+        <div class="amazingslider-engine"><a href="http://amazingslider.com" title="Responsive jQuery Slideshow">Responsive jQuery Slideshow</a></div>
+        </div>
+    </main>
 	<section id="whatwedo" data-aos="fade-in">
 		<h2 data-aos="slide-down">¿Qué hacemos?</h2>
 		<p class="definition" data-aos="slide-down">Creamos soluciones de negocios para ti,<br>ya sea que tengas una gran empresa, un pequeño negocio o una idea para emprender.</p>
@@ -85,7 +101,7 @@
 		<p class="conclusion" data-aos="slide-down"><br>Todo nuestro talento siempre a tu disposición.</p>
 	</section>
 
-	<section id="clients" data-aos="flip-down">
+	<section id="customers" data-aos="flip-down">
 		<h2 data-aos="slide-down"><br>Nuestros clientes</h2>
 		<p class="definition" data-aos="slide-down">Estas son algunas de las marcas que respaldan nuestro trabajo:</p>
 		
@@ -159,18 +175,6 @@
 	<footer>
 		<p class="copyright">© 2019 Regulus Media S.A. - Todos los derechos reservados.</p>
 	</footer>
-
-	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function(){
-				$('.sliderMain').bxSlider({
-				speed: 1000,
-				auto: true,
-				autoHover: true,
-				});
-			});
-		</script>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script>
 	    	AOS.init();
