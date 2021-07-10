@@ -320,7 +320,7 @@ input[type="submit"]:hover{
 	text-shadow: 1px 1px 0 grey;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 501px) and (max-width: 800px) {
 
 	header {
 		flex-wrap: wrap;
@@ -373,5 +373,4 @@ input[type="submit"]:hover{
 	.artifoot {
 		width: 100%;
 	}
-
 }
