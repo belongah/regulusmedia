@@ -209,7 +209,7 @@ h2{
 	flex-direction: row;
 }
 
-.artifooter{
+.artifoot{
 	width: 50%;
 	padding: 2em;
 	box-sizing: border-box;
@@ -315,6 +315,7 @@ input[type="submit"]:hover{
 .copyright{
 	width: 90%;
 	margin: 2.5%;
+	padding-top: 1em;
 	color: black;	
 	text-align: center;
 	box-sizing: border-box;
@@ -371,11 +372,8 @@ input[type="submit"]:hover{
 		flex-wrap: wrap;
 	}
 
-	.artifooter {
+	.artifoot {
 		width: 100%;
 	}
 
-	iframe {
-		height: 100%;
-	}
 }
