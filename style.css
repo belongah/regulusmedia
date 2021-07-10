@@ -77,12 +77,12 @@ main{
 
 #whatwedo{
 	position: relative;
-	padding-top: 3em;
+	padding: 5em 0 0 0;
 }
 
 #whoweare{
 	position: relative;
-	padding-top: 3em;
+	padding: 3em 0 0 0;
 }
 
 h2{
@@ -181,8 +181,7 @@ h2{
 
 #costumers{
 	position: relative;
-	padding-top: 3em;		
-	background-image: none;
+	padding: 3em 0 0 0;
 }
 .enterprise{
 	width: 90%;
@@ -198,8 +197,7 @@ h2{
 
 #contact{
 	position: relative;
-	padding-top: 5em;	
-	background: none;
+	padding: 5em 0 0 0;
 }
 
 .close {
